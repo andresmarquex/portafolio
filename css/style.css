@@ -240,10 +240,20 @@ header {
 
 .intro__img {
 	box-shadow: var(--bs);
+  width: 25vw;
+  aspect-ratio: 30/39;
 }
 
 .section__subtitle--intro {
 	display: inline-block;
+  width: 75vw;
+}
+
+#video1{
+  border: 5px;
+  border-color: gray;
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 
 @media (min-width: 600px){
