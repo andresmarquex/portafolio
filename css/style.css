@@ -250,10 +250,10 @@ header {
 }
 
 #video1{
-  border: 5px;
-  border-color: gray;
-  width: 100%;
-  aspect-ratio: 16/9;
+	border: 10px solid #gray
+	border-color: gray;
+	width: 100%;
+	aspect-ratio: 16/9;
 }
 
 @media (min-width: 600px){
