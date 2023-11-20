@@ -10,3 +10,14 @@ navLinks.forEach(link => {
 		document.body.classList.remove('nav-open');
 	})
 })
+
+var video = document.getElementById("video1");
+window.addEventListener("scroll", function() {
+  var videoPosition = video.getBoundingClientRect();
+  var windowHeight = window.innerHeight;
+  if (videoPosition.top + videoPosition.height >= 0 && videoPosition.bottom - videoPosition.height <= windowHeight) {
+	video.play();
+  } else {
+	video.pause();
+  }
+});
