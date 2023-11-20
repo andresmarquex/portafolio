@@ -250,7 +250,7 @@ header {
 }
 
 #video1{
-	border: 10px solid #gray
+	border: 10px solid gray;
 	border-color: gray;
 	width: 100%;
 	aspect-ratio: 16/9;
@@ -279,7 +279,7 @@ small{
 	}
 	.section__subtitle--intro {
 		align-self: start;
-		grid-coumn: -1 / 1;
+		grid-column: -1 / 1;
 		grid-row: 2;
 		text-align: right;
 		position: relative;
@@ -362,7 +362,7 @@ small{
 	}
 	
 	.section__subtitle--informacion {
-		grid-coumn: 1 / -1;
+		grid-column: 1 / -1;
 		grid-row:2;
 		position: relative;
 		left: -1em;
