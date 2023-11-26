@@ -1,3 +1,7 @@
+function hideObject(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
 windows.addEventListener('load', () =>{
     const contenedor_loader=document.querySelector('.contenedor_loader')
     contenedor_loader.style.opacity = 0
