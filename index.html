@@ -63,29 +63,31 @@
 					<h1 style="color: black; align-items:center">Cargando</h1>
 				</div>
 			</div> -->
-			<video id="video1" 
-						src="../img/portafolio01.mp4" 
-						poster="../img/portafolio01-tn.png" 
-						type="video/mp4"
-						muted loop
-						loading="lazy">
-			</video>
 
-			<script>
-				var video = document.getElementById("video1");
-				window.addEventListener("scroll", function() {
-				  var videoPosition = video.getBoundingClientRect();
-				  var windowHeight = window.innerHeight;
-				  if (videoPosition.top + videoPosition.height >= 0 && videoPosition.bottom - videoPosition.height <= windowHeight) {
-					video.play();
-				  } else {
-					video.pause();
-					if (window.scrollY === 0) {
-					  video.currentTime = 0;
-					}
-				  }
-				});
-			  </script>
+				<video id="video1" 
+							src="../img/portafolio01.mp4" 
+							poster="../img/portafolio01-tn.png" 
+							type="video/mp4"
+							muted loop
+							loading="lazy">
+				</video>
+				<script>
+					var video = document.getElementById("video1")
+
+					window.addEventListener("scroll", function() {
+						var videoPosition = video.getBoundingClientRect();
+						var windowHeight = window.innerHeight;
+						if (videoPosition.top + videoPosition.height >= 0 && videoPosition.bottom - videoPosition.height <= windowHeight) {
+						video.play();
+						} else {
+						video.pause();
+						if (window.scrollY === 0) {
+							video.currentTime = 0;
+						}
+						}
+					})
+				</script>
+			
 			
 			<!-- SERVICIOS -->
 			<section class="mis-servicios" id="servicios">
@@ -169,7 +171,7 @@
 			<!-- FOOTER -->
 			<footer class="footer">
         <br><hr><nr>
-          <p>© Andres Marquez - 2023 <small>0.77</small></p></nr>
+          <p>© Andres Marquez - 2023 <small>0.78</small></p></nr>
 				<a href="mailto:andresmarquez@gmail.com" class="footer__link">andresmarquez@gmail.com</a>
 				<ul class="social-list">
 					<li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/andresmarquez" target=”_blank”>
