@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Galería de imágenes</title>
+  <style>
+
+    .gallery {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      width: 100vw;
+      border: 1px solid white;
+      background-color: black;
+      background: #ffffff;
+        display: inline-block;
+        margin: 55px 75px 30px;
+        padding: 15px 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        -webkit-transition: all .20s linear;
+        -moz-transition: all .20s linear;
+        transition: all .20s linear;
+        z-index: 0;
+        position: relative;
+    }
+    .thumbnail {
+      width: 0px;
+      height: 0px;
+      margin: 0px;
+      border: 0px solid white;
+      cursor: pointer;
+    }
+    .thumbnail img {
+      width: 0%;
+      height: 0%;
+      object-fit: cover;
+    }
+    .selected-image {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      max-width: 100%;
+    }
+    .prev,
+    .next {
+      position: absolute;
+      top: 430px;
+      transform: translateY(-50%);
+      font-size: 30px;
+      color: rblacked;
+      cursor: pointer;
+    }
+    .prev {
+      left: 20px;
+    }
+    .next {
+      right: 20px;
+    }
+    .thumbnails {
+      display: flex;
+      flex-direction: row;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <img class="selected-image" src="../img/galeria/01.PNG">
+    <div class="thumbnails">
+      <div class="thumbnail"><img src="../img/galeria/01.PNG"></div>
+      <div class="thumbnail"><img src="../img/galeria/02.PNG"></div>
+      <div class="thumbnail"><img src="../img/galeria/03.PNG"></div>
+      <div class="thumbnail"><img src="../img/galeria/04.PNG"></div>
+      <div class="thumbnail"><img src="../img/galeria/05.PNG"></div>
+      <div class="thumbnail"><img src="../img/galeria/06.PNG"></div>
+      <div class="thumbnail"><img src="../img/galeria/07.PNG"></div>
+      <div class="thumbnail"><img src="../img/galeria/08.PNG"></div>
+      <div class="thumbnail"><img src="../img/galeria/09.PNG"></div>
+      <div class="thumbnail"><img src="../img/galeria/10.PNG"></div>
+    </div>
+    <div class="prev">❮</div>
+    <div class="next">❯</div>
+  </div>
+  <script>
+    const images = document.querySelectorAll('.thumbnail img');
+    const selectedImage = document.querySelector('.selected-image');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    let currentIndex = 0;
+
+    function showImage(index) {
+      selectedImage.src = images[index].src;
+      currentIndex = index;
+    }
+
+    function nextImage() {
+      currentIndex++;
+      if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+      showImage(currentIndex);
+    }
+
+    function prevImage() {
+      currentIndex--;
+      if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+      }
+      showImage(currentIndex);
+    }
+
+    function autoChange() {
+      nextImage();
+    }
+
+    setInterval(autoChange, 5000);
+
+    images.forEach((image, index) => {
+      image.addEventListener('click', () => {
+        showImage(index);
+      });
+    });
+
+    prev.addEventListener('click', prevImage);
+    next.addEventListener('click', nextImage);
+  </script>
+</body>
+</html>
