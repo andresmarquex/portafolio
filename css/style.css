@@ -273,7 +273,9 @@ header {
 	justify-content: center;
 	align-items: center;
 	height: 50vh;
-	width: 100vw;
+	height: 450px !important;
+	width: 400px;
+	aspect-ratio: 7/9;
 	border: 1px solid white;
 	background-color: black;
 	background: #ffffff;
@@ -309,7 +311,7 @@ header {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	margin: auto;
+	margin: 5px;
 	max-width: 100%;
   }
   .prev,
