@@ -8,6 +8,7 @@
 			<script src="https://kit.fontawesome.com/8baf4e6cdb.js" crossorigin="anonymous"></script>
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
 			<link rel="stylesheet" href="css/style.css">
+			<script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
 		</head>
 		<body>
 			<header>
@@ -33,9 +34,56 @@
 				<h2 class="section__title section__title--informacion">Tono tono semitono tono</h2>
 				<p class="section__subtitle section__subtitle--informacion">Músico</p>
 				
+				
 				<div class="informacion__body">
 					<p><strong>Elevar las notas y subir emociones al cantar!</strong></p><br>
 					<h3>1999 - Estupida Peliroja</h3><br>
+					<button onclick="webamp.reopen()">PLAY MUSIC</button><br>
+						<div class="winamp-player" style="
+							width:1px; 
+							height:1px; 
+							position:relative; 
+							bottom:0px; 
+						">
+							<div id="winamp-container"></div>
+							<script>
+								const Winamp = window.Webamp;
+								// All configuration options are optional.
+								const webamp = new Webamp({
+									// Optional.
+									enableDoubleSizeMode: true,
+									zIndex: 99999,
+									initialTracks: [
+										{
+											metaData: {
+												artist: "Estupida Peliroja",
+												title: "Paseando",
+											},
+											url: "../winamp/ep1.mp3",
+										}, {
+											metaData: {
+												artist: "Estupida Peliroja",
+												title: "Copa a Copa",
+											},
+											url: "../winamp/ep2.mp3",
+										},
+										{
+											metaData: {
+												artist: "Estupida Peliroja",
+												title: "El tren",
+											},
+											url: "../winamp/ep3.mp3",
+										},
+									],
+									initialSkin: {
+										url: "../winamp/Winamp5.wsz"
+									},
+								});
+								webamp.renderWhenReady(document.getElementById('winamp-container'));
+								webamp.close();
+							</script>
+					</div></div>
+					<br>
 					<h3>2003 - Baja Presión</h3><br>
 						<a download href="../img/vd/2003 Pipe - No me lo preguntes.mp3">
 							<audio id="audio1" controls src="../img/vd/2003 Pipe - No me lo preguntes.mp3">
