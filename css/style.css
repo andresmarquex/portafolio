@@ -400,6 +400,7 @@ small{
 .servicio {
 	max-width: 500px;
 	margin: 0 auto;
+	background-color: rgba(0, 0, 0, .5);
 }
 
 
@@ -604,3 +605,23 @@ small{
 		box-shadow: 0 2.5em 0 0;
 	}
 }
+
+.fa-duotone .fa-arrow-up-right-from-square {
+	font-size: 10px;
+}
+
+details {
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	padding: 0.5em 0.5em 0;
+  }
+  
+  summary {
+	font-weight: bold;
+	margin: -0.5em -0.5em 0;
+	padding: 0.5em;
+  }
+  
+  details[open] {
+	padding: 0.5em;
+  }
