@@ -1,0 +1,389 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	padding: 10px 0px;
+	background-color: #656565;
+	color: #c2bebe;
+	font-family: verdana, arial, sans-serif;
+	font-size: 11px;
+	text-align: center;
+}
+
+a {
+	color: #c2bebe;
+	
+	background-color: inherit;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #d26a36;
+	background-color: inherit;
+}
+
+span {
+	display: none;
+}
+
+img {
+	border: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+p {
+	padding: 14px 0px 5px;
+	text-align: justify;
+	line-height: 12px;
+	clear : both;
+	float : none;
+}
+
+.clearthis {
+	margin : 0px;
+	height : 1px;
+	clear : both;
+	float : none;
+	font-size : 1px;
+	line-height : 0px;
+	overflow : hidden;
+	visibility: hidden;
+}
+
+
+#container {
+	margin: 0px auto;
+	width: 778px;
+	background: url('images/container_background.gif') #0c070d repeat-y 0px 0px;
+	color: inherit;
+}
+
+.thumbnail {
+	padding: 10px 0px;
+}
+
+.thumbnail img {
+	border: #5c5b5c 1px solid;
+}
+
+
+/* Page Title */
+
+#page_title {
+	width: 362px;
+	height: 128px;
+	background-image: url('images/background.gif');
+	background-repeat: repeat-x;
+	background-position: 0% 100%;
+	overflow: hidden;
+	float: right;
+}
+
+#page_title h1 {
+	width: 362px;
+	height: 126px;
+	background: url('images/company_name.gif') #292829 no-repeat 50% 50%;
+	color: #cf7235;
+}
+
+
+/* Page Image */
+
+#page_image {
+	width: 414px;
+	height: 534px;
+	background: url('images/main_image.gif') #09070a no-repeat 0px 100%;
+	color: inherit;
+	overflow: hidden;
+}
+
+
+/* Left Column */
+
+#left_column {
+	width: 414px;
+	font-size: 12px;
+	float: left;
+}
+
+#left_column h2 {
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-color: inherit;
+	color: #d26a36;
+}
+
+
+/* Right Column */
+
+#right_column {
+	padding-bottom: 20px;
+	width: 362px;
+	background-color: #0c070d;
+	color: inherit;
+	float: right;
+	clear: right;
+}
+
+#right_column h2 {
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-color: inherit;
+	color: #c7c7c7;
+}
+
+#right_column p {
+	padding-top: 20px;
+}
+
+
+/* Page Menu */
+
+#page_menu {
+	padding: 15px 0px;
+	width: 414px;
+	background: url('images/background.gif') #0c070d repeat-x 0% 0%;
+	color: #c2bebe;
+}
+
+#page_menu a {
+	background-color: inherit;
+	color: #c2bebe;
+	text-decoration: none;
+}
+
+#page_menu a:hover {
+	background-color: inherit;
+	color: #fff;
+}
+
+#page_menu li {
+	padding: 0px 2px 2px;
+	float: left;
+}
+
+#page_menu li a {
+	display: block;
+	width: 81px;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+#page_menu li a span {
+	padding-top: 50px;
+	display: block;
+}
+
+#menu1 a {
+	background-image: url('images/andresm.png');
+}
+
+#menu2 a {
+	background-image: url('images/menu_bg2.gif');
+}
+
+#menu3 a {
+	background-image: url('images/menu_bg3.gif');
+}
+
+#menu4 a {
+	background-image: url('images/menu_bg4.gif');
+}
+
+#menu5 a {
+	background-image: url('images/menu_bg5.gif');
+}
+
+#menu6 a {
+	background-image: url('images/blogger.png');
+}
+
+#menu7 a {
+	background-image: url('images/facebook.png');
+}
+
+#menu8 a {
+	background-image: url('images/myspace.png');
+}
+
+#menu9 a {
+	background-image: url('images/twitter.png');
+}
+
+#menu10 a {
+	background-image: url('images/wordpress.png');
+}
+
+#menu11 a {
+	background-image: url('images/youtube.png');
+}
+
+#menu12 a {
+	background-image: url('images/amsolp.png');
+}
+
+#menu13 a {
+	background-image: url('images/linkedin.png');
+}
+
+#menu14 a {
+	background-image: url('images/sono.png');
+}
+
+#menu15 a {
+	background-image: url('images/estl.jpg');
+}
+
+#menu16 a {
+	background-image: url('images/8m.png');
+}
+
+#menu17 a {
+	background-image: url('images/fsquare.png');
+}
+
+#menu18 a {
+	background-image: url('images/tk.png');
+}
+
+#menu19 a {
+	background-image: url('images/google.png');
+}
+
+#menu20 a {
+	background-image: url('images/taringa.png');
+}
+
+#menu21 a {
+	background-image: url('images/twitpic.png');
+}
+
+#menu22 a {
+	background-image: url('images/lya.png');
+}
+
+#menu23 a {
+	background-image: url('images/gplus.png');
+}
+
+#menu24 a {
+	background-image: url('images/viadeo.png');
+}
+
+#menu25 a {
+	background-image: url('images/reverb.png');
+}
+
+#menu26 a {
+	background-image: url('images/flickr.png');
+}
+
+#menu27 a {
+	background-image: url('images/instruc.png');
+}
+
+#menu28 a {
+	background-image: url('images/aboutme.png');
+}
+
+#menu29 a {
+	background-image: url('images/vimeo.png');
+}
+
+#menu30 a {
+	background-image: url('images/trunkly.png');
+}
+
+#menu31 a {
+	background-image: url('images/8track.png');
+}
+
+#menu32 a {
+	background-image: url('images/ilike.png');
+}
+
+#menu33 a {
+	background-image: url('images/soundcloud.png');
+}
+
+#menu34 a {
+	background-image: url('images/panoramio.png');
+}
+
+#menu35 a {
+	background-image: url('images/yahoo.png');
+}
+
+#menu36 a {
+	background-image: url('images/tumblr.png');
+}
+
+#menu37 a {
+	background-image: url('images/lastfm.png');
+}
+
+#menu38 a {
+	background-image: url('images/grooveshark.png');
+}
+/* Latest News */
+
+#latestnews {
+	padding: 10px 28px 0px;
+}
+
+#latestnews h2 {
+	margin-bottom: 5px;
+	height: 37px;
+	background-image: url('images/latestnews_header.gif');
+}
+
+
+/* Latest Video */
+
+#latestvideo {
+	padding: 20px 25px;
+}
+
+#latestvideo h2 {
+	height: 35px;
+	background-image: url('images/latestvideo_header.gif');
+}
+
+
+/* Album Review */
+
+#albumreview {
+	padding: 30px 25px 10px;
+}
+
+#albumreview h2 {
+	height: 35px;
+	background-image: url('images/review_header.gif');
+}
+
+
+/* Page Footer */
+
+#page_footer {
+	margin-left: 416px;
+	width: 362px;
+	padding: 9px 0px;
+	background: url('images/background.gif') #343231 repeat-x 0px 0px;
+	color: inherit;
+	clear: both;
+	font-size: 10px;
+	line-height: 12px;
+}

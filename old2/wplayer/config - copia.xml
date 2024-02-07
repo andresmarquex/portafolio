@@ -1,0 +1,195 @@
+﻿<config>
+	<!--
+		(c) 2007 TUFaT.com, All Rights Reserved. Unauthorized redistribution is 
+		prohibited.
+	-->
+
+	<!-- true / false -->
+	<auto_start>true</auto_start>
+
+	<player_skin>./wplayer/skins/skin1.swf</player_skin>
+
+	<main_title>WINAMP</main_title>
+	<playlist_title>PLAYLIST</playlist_title>
+	<time_text>TOTAL TIME</time_text>
+	<pan_labels>L,R</pan_labels>
+
+	<!-- must be an integer 1 - 20 -->
+	<scroller_speed>3</scroller_speed>	
+	   <scroller_marquee_content>#TRACK_NAME#</scroller_marquee_content>
+
+	<!--Repeat button enabled-->
+	<!-- true / false -->
+	<repeat_is_enabled>false</repeat_is_enabled>
+
+	<!--Shuffle button enabled-->
+	<!-- true / false -->
+	<shuffle_is_enabled>true</shuffle_is_enabled>
+	
+	<!-- must be an integer 0 .. 100 -->
+	<default_volume>60</default_volume>
+
+	<!-- must be an integer -100 .. 100 -->
+	<default_pan>0</default_pan>
+
+	<!--PLAYLIST 
+		Items should follow this format:
+	        path_to_mp3_file;Title_of_mp3_file
+	-->
+	<play_list>
+		<item>music/Alejandra Lerner - Volver a empezar.mp3;Alejandra Lerner - Volver a empezar</item>
+		<item>music/Alejandro Fernandez y Gloria Estefan - En el Jardin.mp3;Alejandro Fernandez y Gloria Estefan - En el Jardin</item>
+		<item>music/Alejandro Fernandez y Julio Iglesias - Dos corazones dos historias.mp3;Alejandro Fernandez y Julio Iglesias - Dos corazones dos historias</item>
+		<item>music/Alex ubago - Aunque no te pueda ver.mp3;Alex ubago - Aunque no te pueda ver</item>
+		<item>music/Alex ubago - Es por ti.mp3;Alex ubago - Es por ti</item>
+		<item>music/Alexander Acha - Te amo.mp3;Alexander Acha - Te amo</item>
+		<item>music/Amaia Montero - Quiero ser.mp3;Amaia Montero - Quiero ser</item>
+		<item>music/Ana y Jaime - Amor Amor.mp3;Ana y Jaime - Amor Amor</item>
+		<item>music/Andres Cepeda - Dia tras dia (en vivo).mp3;Andres Cepeda - Dia tras dia (en vivo)</item>
+		<item>music/Andres Cepeda - D¡a tras d¡a.mp3;Andres Cepeda - D¡a tras d¡a</item>
+		<item>music/Andres Cepeda - Faltaran.mp3;Andres Cepeda - Faltaran</item>
+		<item>music/ANDRES CEPEDA-ENFERMEDAD DE TI-VIDEO OFICIAL..mp3;ANDRES CEPEDA-ENFERMEDAD DE TI-VIDEO OFICIAL.</item>
+		<item>music/Angelo - Si Te Vas (Video Oficial).mp3;Angelo - Si Te Vas (Video Oficial)</item>
+		<item>music/ar Ft. Daddy Yankee - Hasta Abajo (Official Remix)(Original).mp3;ar Ft. Daddy Yankee - Hasta Abajo (Official Remix)(Original)</item>
+		<item>music/Armando Manzanero y Alejandro Sanz - Adoro.mp3;Armando Manzanero y Alejandro Sanz - Adoro</item>
+		<item>music/Axel - Amo.mp3;Axel - Amo</item>
+		<item>music/Axel - Tu amor por siempre.mp3;Axel - Tu amor por siempre</item>
+		<item>music/Cabas - Bonita.mp3;Cabas - Bonita</item>
+		<item>http://www.andresmarquez.com/wplayer/music/Calle13-Besodedesayuno.mp3;Calle 13 - Beso de desayuno</item>
+		<item>music/Calle 13 - Tocarte toda.mp3;Calle 13 - Tocarte toda</item>
+		<item>music/Camila - Coleccionista de canciones.mp3;Camila - Coleccionista de canciones</item>
+		<item>music/Camila - Todo cambio.mp3;Camila - Todo cambio</item>
+		<item>music/canciones.txt;canciones</item>
+		<item>music/CARLOS BAUTE ( TE REGALO ).mp3;CARLOS BAUTE ( TE REGALO )</item>
+		<item>music/Carlos Baute - Tu no sabes que tanto.mp3;Carlos Baute - Tu no sabes que tanto</item>
+		<item>music/Carlos Baute y Marta Sanchez - Colgando en tus manos.mp3;Carlos Baute y Marta Sanchez - Colgando en tus manos</item>
+		<item>music/Carlos Vives - Voy a Olvidarme de m¡.mp3;Carlos Vives - Voy a Olvidarme de m¡</item>
+		<item>music/Chayanne -Me Enamor‚ de ti.mp3;Chayanne -Me Enamor‚ de ti</item>
+		<item>music/CHAYANNE ME ENAMORE DE TI VIDEO OFICIAL 2010.mp3;CHAYANNE ME ENAMORE DE TI VIDEO OFICIAL 2010</item>
+		<item>music/Chenoa - Volverte a ver.mp3;Chenoa - Volverte a ver</item>
+		<item>music/Chenoa y Bisbal - Escondidos.mp3;Chenoa y Bisbal - Escondidos</item>
+		<item>music/Chino y Nacho - Lo Que No Sabes T£.mp3;Chino y Nacho - Lo Que No Sabes T£</item>
+		<item>music/Christina Aguilera - Contigo en la Distancia.mp3;Christina Aguilera - Contigo en la Distancia</item>
+		<item>music/Christina Aguilera - Si no te hubiera conocido.mp3;Christina Aguilera - Si no te hubiera conocido</item>
+		<item>music/Compa¤ia Ilimitada - Como decirte.mp3;Compa¤ia Ilimitada - Como decirte</item>
+		<item>music/Daddy Yankee - Llamado de emergencia.mp3;Daddy Yankee - Llamado de emergencia</item>
+		<item>music/Daddy Yankee - Pose.mp3;Daddy Yankee - Pose</item>
+		<item>music/De La Ghetto -Tu Te Imaginas.mp3;De La Ghetto -Tu Te Imaginas</item>
+		<item>music/Demi Moore _ Patrick Swayze - Unchained Melody.mp3;Demi Moore _ Patrick Swayze - Unchained Melody</item>
+		<item>music/Diana Ross y Lionel Richie - Endless Love.mp3;Diana Ross y Lionel Richie - Endless Love</item>
+		<item>music/Diego gonzalez y Miranda cosgrove Perdido en ti.mp3;Diego gonzalez y Miranda cosgrove Perdido en ti</item>
+		<item>music/Eddi Vico Tego Zion Yankee Ivy Wiso Lennox - 12 discipulos.mp3;Eddi Vico Tego Zion Yankee Ivy Wiso Lennox - 12 discipulos</item>
+		<item>music/Ednita y Natalia Jimenez - NO.mp3;Ednita y Natalia Jimenez - NO</item>
+		<item>music/el doctorado tony dize official video pina records.mp3;el doctorado tony dize official video pina records</item>
+		<item>music/Enur feat. Natasja - Calabria 2007.mp3;Enur feat. Natasja - Calabria 2007</item>
+		<item>music/Fausto - Agua Caliente.mp3;Fausto - Agua Caliente</item>
+		<item>music/Fonseca - Alma de hierro.mp3;Fonseca - Alma de hierro</item>
+		<item>music/Fonseca - Arroyito (acustica).mp3;Fonseca - Arroyito (acustica)</item>
+		<item>music/Fonsi Bisbal Noel Syntek - Aqui estoy yo.mp3;Fonsi Bisbal Noel Syntek - Aqui estoy yo</item>
+		<item>music/Francisco Cespedes y Presuntos Implicados - Nadie como tu.mp3;Francisco Cespedes y Presuntos Implicados - Nadie como tu</item>
+		<item>music/Franco de Vita - Cuando Tus Ojos Me Miran.mp3;Franco de Vita - Cuando Tus Ojos Me Miran</item>
+		<item>music/Franko de Vita - Te Amo.mp3;Franko de Vita - Te Amo</item>
+		<item>music/Get_Busy_-_Sean_Paul.mp3;Get_Busy_-_Sean_Paul</item>
+		<item>music/gilberto santa rosa - te amare.mp3;gilberto santa rosa - te amare</item>
+		<item>music/Gilberto Santarosa - Almas Gemelas.mp3;Gilberto Santarosa - Almas Gemelas</item>
+		<item>music/Gitana - Shakira (Completa con arm¢nica HQ).mp3;Gitana - Shakira (Completa con arm¢nica HQ)</item>
+		<item>music/Gitana - Shakira (espa¤ol).mp3;Gitana - Shakira (espa¤ol)</item>
+		<item>music/IL DIVO - Heroe.mp3;IL DIVO - Heroe</item>
+		<item>music/Jason Mraz - I'm Yours [2008]_NEW.mp3;Jason Mraz - I'm Yours [2008]_NEW</item>
+		<item>music/Jason Mraz y Colbie Caillat - Lucky.mp3;Jason Mraz y Colbie Caillat - Lucky</item>
+		<item>music/Jason Mraz y Ximena Sari¤a - Lucky.mp3;Jason Mraz y Ximena Sari¤a - Lucky</item>
+		<item>music/Javier Solis - Te amare toda la vida.mp3;Javier Solis - Te amare toda la vida</item>
+		<item>music/Jesse y Joy - Espacio Sideral.mp3;Jesse y Joy - Espacio Sideral</item>
+		<item>music/Jesse y Joy - Outterspace.mp3;Jesse y Joy - Outterspace</item>
+		<item>music/Jorge Celedon - El invierno pasado.mp3;Jorge Celedon - El invierno pasado</item>
+		<item>music/Jorge Celedon - Te perdone.mp3;Jorge Celedon - Te perdone</item>
+		<item>music/Jose Feliciano - Mar y Cielo.mp3;Jose Feliciano - Mar y Cielo</item>
+		<item>music/Jose Gaviria - Pensar en ti.mp3;Jose Gaviria - Pensar en ti</item>
+		<item>music/Jose Luis Perales - El amor.mp3;Jose Luis Perales - El amor</item>
+		<item>music/Joss Stone - L-O-V-E.mp3;Joss Stone - L-O-V-E</item>
+		<item>music/Juan Luis Guerra - Cuando te beso.mp3;Juan Luis Guerra - Cuando te beso</item>
+		<item>music/Juan Luis Guerra - Solo tengo ojos para ti.mp3;Juan Luis Guerra - Solo tengo ojos para ti</item>
+		<item>music/Juan Pablo Rodriguez - Estoy aqui.mp3;Juan Pablo Rodriguez - Estoy aqui</item>
+		<item>music/Juanes - Gotas De Agua Dulce.mp3;Juanes - Gotas De Agua Dulce</item>
+		<item>music/Juanes - Nada Valgo Sin Tu Amor.mp3;Juanes - Nada Valgo Sin Tu Amor</item>
+		<item>music/Kaleth Morales - Mi reina consentida.mp3;Kaleth Morales - Mi reina consentida</item>
+		<item>music/Kaleth Morales - Tronco e'nota.mp3;Kaleth Morales - Tronco e'nota</item>
+		<item>music/Kaleth Morales y Silvestre Dangon - Se va a formar.mp3;Kaleth Morales y Silvestre Dangon - Se va a formar</item>
+		<item>music/Kany Garcia - Todo basta.mp3;Kany Garcia - Todo basta</item>
+		<item>music/Kaoma - Lambada.mp3;Kaoma - Lambada</item>
+		<item>music/La 5a Estacion y Marc Anthony - Recuerdame.mp3;La 5a Estacion y Marc Anthony - Recuerdame</item>
+		<item>music/La 5ta Estacion - Algo mas.mp3;La 5ta Estacion - Algo mas</item>
+		<item>music/La hija del mariachi - Rosario - Adoro.mp3;La hija del mariachi - Rosario - Adoro</item>
+		<item>music/La hija del Mariachi - Sabes una cosa.mp3;La hija del Mariachi - Sabes una cosa</item>
+		<item>music/LatinGrammys - 12 Discipulos.mp3;LatinGrammys - 12 Discipulos</item>
+		<item>music/Lenny Kravitz - I Belong To You (Subtitulada al Espa¤ol).mp3;Lenny Kravitz - I Belong To You (Subtitulada al Espa¤ol)</item>
+		<item>music/Lleno de Sentimiento - Original.mp3;Lleno de Sentimiento - Original</item>
+		<item>music/Lu - Por besarte.mp3;Lu - Por besarte</item>
+		<item>music/Luis Fonsi - Abrazar la vida.mp3;Luis Fonsi - Abrazar la vida</item>
+		<item>music/Luis Fonsi - No me doy por vencido.mp3;Luis Fonsi - No me doy por vencido</item>
+		<item>music/Mana - Bendita tu luz.mp3;Mana - Bendita tu luz</item>
+		<item>music/Manuela Mejia - Tus Ojos_NEW.mp3;Manuela Mejia - Tus Ojos_NEW</item>
+		<item>music/Marc Anthony - Y Huno alguien.mp3;Marc Anthony - Y Huno alguien</item>
+		<item>music/Marisela y Marco Antonio Soliz - La pareja Ideal.mp3;Marisela y Marco Antonio Soliz - La pareja Ideal</item>
+		<item>music/Michael Jackson - No puedo dejar de amarte Salsa.mp3;Michael Jackson - No puedo dejar de amarte Salsa</item>
+		<item>music/Miranda y Julieta Venegas - Perfecta.mp3;Miranda y Julieta Venegas - Perfecta</item>
+		<item>music/Nelly Furtado - Te busque.mp3;Nelly Furtado - Te busque</item>
+		<item>music/No veo la hora - Noel Schajris (HD).mp3;No veo la hora - Noel Schajris (HD)</item>
+		<item>music/PASABORDO EL CALENDARIO.mp3;PASABORDO EL CALENDARIO</item>
+		<item>music/Peter Manjarrez - Tragao de ti.mp3;Peter Manjarrez - Tragao de ti</item>
+		<item>music/Pipe Pelaez - Amapola.mp3;Pipe Pelaez - Amapola</item>
+		<item>music/Pipe Pelaez - Cuando quieras quiero.mp3;Pipe Pelaez - Cuando quieras quiero</item>
+		<item>music/Pipe Pelaez - El amor m s grande del planeta.mp3;Pipe Pelaez - El amor m s grande del planeta</item>
+		<item>music/Pipe Pelaez - Lo Tienes Todo.mp3;Pipe Pelaez - Lo Tienes Todo</item>
+		<item>music/Pipe Pelaez - Mejor es imposible.mp3;Pipe Pelaez - Mejor es imposible</item>
+		<item>music/Pipe Pelaez - Te amo y Te amo(video).mp3;Pipe Pelaez - Te amo y Te amo(video)</item>
+		<item>music/Pipe Pelaez - Te amo y te amo.mp3;Pipe Pelaez - Te amo y te amo</item>
+		<item>music/Pipe Pelaez - Te Amo.mp3;Pipe Pelaez - Te Amo</item>
+		<item>music/Presuntos Implicados - En la Oscuridad.mp3;Presuntos Implicados - En la Oscuridad</item>
+		<item>music/Randy Crawford y Presuntos Implicados - Fallen.mp3;Randy Crawford y Presuntos Implicados - Fallen</item>
+		<item>music/Ricardo Arjona y Chenoa - Pinguinos en la cama.mp3;Ricardo Arjona y Chenoa - Pinguinos en la cama</item>
+		<item>music/Ricos y Pobres - Sera porque te amo.mp3;Ricos y Pobres - Sera porque te amo</item>
+		<item>music/Rosana - Contigo.mp3;Rosana - Contigo</item>
+		<item>music/Rosana - Si tu no estas aqui.mp3;Rosana - Si tu no estas aqui</item>
+		<item>music/Ruben Blades - Amor y Control.mp3;Ruben Blades - Amor y Control</item>
+		<item>music/Ruben Blades - Chica plastica.mp3;Ruben Blades - Chica plastica</item>
+		<item>music/Saavedra - De eso se trata.mp3;Saavedra - De eso se trata</item>
+		<item>music/Saavedra - Faltas.mp3;Saavedra - Faltas</item>
+		<item>music/San alejo - Me gusta.mp3;San alejo - Me gusta</item>
+		<item>music/Sean Paul - Agarra Mi Mano.mp3;Sean Paul - Agarra Mi Mano</item>
+		<item>music/Sean Paul - Still in love.mp3;Sean Paul - Still in love</item>
+		<item>music/Shaila Durcal - Por ti.mp3;Shaila Durcal - Por ti</item>
+		<item>music/Shakira - Antologia.mp3;Shakira - Antologia</item>
+		<item>music/Shakira - Hay amores.mp3;Shakira - Hay amores</item>
+		<item>music/Shakira - Loba.mp3;Shakira - Loba</item>
+		<item>music/Shakira - Que me quedes tu.mp3;Shakira - Que me quedes tu</item>
+		<item>music/Shakira - She wolf.mp3;Shakira - She wolf</item>
+		<item>music/shakira gitana official video.mp3;shakira gitana official video</item>
+		<item>music/Si Tu No Vuelves - Shakira _ Miguel Bos‚.mp3;Si Tu No Vuelves - Shakira _ Miguel Bos‚</item>
+		<item>music/Silvestre Dangond - El Original.mp3;Silvestre Dangond - El Original</item>
+		<item>music/Silvestre Dangond - Tronco e'nota.mp3;Silvestre Dangond - Tronco e'nota</item>
+		<item>music/Sin Bandera - Que me alcance la vida.mp3;Sin Bandera - Que me alcance la vida</item>
+		<item>music/Sin Bandera - Tocame (detras de camara).mp3;Sin Bandera - Tocame (detras de camara)</item>
+		<item>music/Sin Bandera - Tocame.mp3;Sin Bandera - Tocame</item>
+		<item>music/Sin Bandera y Vivo C - Juanto a ti.mp3;Sin Bandera y Vivo C - Juanto a ti</item>
+		<item>music/Soraya - Solo por ti.mp3;Soraya - Solo por ti</item>
+		<item>music/Timbiriche - Vuelvo a comenzar.mp3;Timbiriche - Vuelvo a comenzar</item>
+		<item>music/Tito El Bambino - Mi Cama Huele A Ti.mp3;Tito El Bambino - Mi Cama Huele A Ti</item>
+		<item>music/Tiziano Ferro - Il regalo piu grande.mp3;Tiziano Ferro - Il regalo piu grande</item>
+		<item>music/Tiziano Ferro y Amaia Montero - El regalo mas grande en vivo.mp3;Tiziano Ferro y Amaia Montero - El regalo mas grande en vivo</item>
+		<item>music/Tiziano Ferro y Amaia Montero - El regalo mas grande.mp3;Tiziano Ferro y Amaia Montero - El regalo mas grande</item>
+		<item>music/Tommy Torres - Tarde o Temprano.mp3;Tommy Torres - Tarde o Temprano</item>
+		<item>music/Tommy Torres y Jesse y Joy - Imparable.mp3;Tommy Torres y Jesse y Joy - Imparable</item>
+		<item>music/Tony Haze y Calle 13 - Tocarte toda.mp3;Tony Haze y Calle 13 - Tocarte toda</item>
+		<item>music/tu no sabes que tanto - en vivo..mp3;tu no sabes que tanto - en vivo.</item>
+		<item>music/Un violinista en tu tejado - Melendi video and lyrics.mp3;Un violinista en tu tejado - Melendi video and lyrics</item>
+		<item>music/Valentina Rendon - Venezzia.mp3;Valentina Rendon - Venezzia</item>
+		<item>music/Vicente Fernandez - Motivos.mp3;Vicente Fernandez - Motivos</item>
+		<item>music/Victor y Leo - Nada es normal HQ.mp3;Victor y Leo - Nada es normal HQ</item>
+		<item>music/Willie Colon y Ruben Blades - Plastico.mp3;Willie Colon y Ruben Blades - Plastico</item>
+
+		
+		
+	</play_list>
+
+</config>
