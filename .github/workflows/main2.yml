@@ -14,4 +14,4 @@ jobs:
           server: 65.19.141.77
           user: andresmarquez
           password: ${{ secrets.ftp_password }}
-          local_dir: "./httpdocs/"
+          local_dir: "httpdocs/"
