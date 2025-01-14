@@ -6,6 +6,49 @@
 	box-sizing: border-box;
 }
 
+/* CSS */
+.intro__img {
+    box-shadow: var(--bs);
+    width: 25vw;
+    aspect-ratio: 30/39;
+}
+
+/* Reset Styles */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Mobile first */
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    .intro__img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
+    .section__subtitle--intro {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -5em;
+        width: calc(100% + 5em);
+    }
+}
+
 /* Custom Properties */
 :root {
 	--ff-primary: 'Ubuntu', sans-serif;
