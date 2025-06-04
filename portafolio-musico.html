@@ -9,6 +9,41 @@
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
 			<link rel="stylesheet" href="css/style.css">
 			<script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
+
+			<style>
+				.tarjeta {
+					display: flex;
+					align-items: center;
+					border: 1px solid #ddd;
+					border-radius: 10px;
+					padding: 15px;
+					width: 400px;
+					font-family: Arial, sans-serif;
+				}
+		
+				.tarjeta img {
+					width: 80px;
+					height: 80px;
+					border-radius: 50%;
+					margin-right: 15px;
+				}
+		
+				.info {
+					flex-grow: 1;
+				}
+		
+				.footer_div {
+					display: flex;
+					justify-content: space-between;
+					padding-top: 10px;
+				}
+		
+				.footer_div img {
+					width: 24px;
+					height: 24px;
+				}
+			</style>
+			
 		</head>
 		<body>
 			<header>
@@ -199,6 +234,19 @@
 						controls
 						loading="lazy">
 						</video><br>
+						<div class="tarjeta">
+							<img src="./4tacuerda/logo.jpeg" alt="4ta Cuerda">
+							<div class="info">
+								<p><strong>Nombre:</strong> 4ta Cuerda</p>
+								<p><strong>Descripción:</strong> Colectivo de músicos</p>
+								<p><strong>Tipo de música:</strong> Rock, Pop y tropical.</p>
+								<div class="footer_div">
+									<a href="https://facebook.com/andresmarquez"><i class="fab fa-facebook"></i></a>
+									<a href="https://instagram.com/andresmarquez"><i class="fab fa-instagram"></i></a>
+									<a href="https://andresmarquez.co/4tacuerda/index.html"><i class="fas fa-link"></i></a>
+								</div>
+							</div>
+						</div><br>
 					<h3>2019 - Cuarta cuerda El Pintor</h3><br>
 						<video id="video4taCuerda" 
 						src="../img/vd/2019_4taCuerda_El_pintor.mp4" 
