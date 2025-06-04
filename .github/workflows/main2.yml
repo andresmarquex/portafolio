@@ -14,4 +14,4 @@ jobs:
           server: ftp.andresmarquez.co
           user: perton2@andresmarquez.co
           password: ${{ secrets.ftp_password }}
-          local_dir: "./public_html/"
+          local_dir: "./"
