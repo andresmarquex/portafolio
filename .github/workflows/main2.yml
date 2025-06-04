@@ -11,7 +11,7 @@ jobs:
       - name: Upload from public_html via FTP
         uses: airvzxf/ftp-deployment-action@latest
         with:
-          server: 65.19.141.77
-          user: andresmarquez
+          server: ftp.andresmarquez.co
+          user: perton2@andresmarquez.co
           password: ${{ secrets.ftp_password }}
-          local_dir: "httpdocs/"
+          local_dir: "/public_html/"
