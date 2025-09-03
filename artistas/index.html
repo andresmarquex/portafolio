@@ -3,64 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Artistas Destacados</title>
+  <title>Artistas PegateYa Medellin</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f0f0;
-      margin: 0;
-      padding: 20px;
-    }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin: 15px;
-      width: 400px;
-      padding: 15px;
-      text-align: center;
-    }
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-    .card h2 {
-      margin: 10px 0 5px;
-    }
-    .card p {
-      font-size: 0.9em;
-      color: #555;
-    }
-    .links a {
-      display: inline-block;
-      margin: 5px 0;
-      text-decoration: none;
-      color: #0077cc;
-      font-size: 0.9em;
-    }
-    .links img {
-      width: 16px;
-      vertical-align: middle;
-      margin-right: 4px;
-    }
-    iframe {
-      width: 100%;
-      height: 180px;
-      margin-top: 10px;
-      border: none;
-      display: block;
-    }
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.grid-artistas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card h2 {
+  margin: 10px 0 5px;
+}
+
+.card h4 {
+  margin: 0 0 10px;
+  font-weight: normal;
+  color: #666;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.links {
+  margin-top: 10px;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  text-decoration: none;
+  color: #0077cc;
+  font-size: 0.9em;
+}
+
+.links img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+iframe {
+  width: 100%;
+  height: 180px;
+  margin-top: 10px;
+  border: none;
+  display: block;
+}
+.links a:hover {
+  color: #005fa3;
+  transform: translateX(2px);
+  transition: all 0.2s ease;
+}
+
+
+
   </style>
 </head>
 <body>
-
-  <h1>Artistas Principales</h1>
+<center>
+  <h1>Artistas PegateYa</h1>
+  </center>
   <div class="container">
 
     <div id="contenedor-artistas" class="grid-artistas"></div>
@@ -78,19 +110,20 @@ fetch('./artistas.json')
           <img src="${artista.imagen}" alt="${artista.nombre}" class="thumbnail">
           <p><strong>Descripción del canal de YouTube:</strong><br>${artista.descripcion}</p>
           <div class="links">
-            <a href="${artista.sitio_web}" target="_blank">
-              <img src="./icons/web-favicon.png" alt="Sitio web"> Sitio oficial
-            </a><br>
-            <a href="${artista.instagram}" target="_blank">
-              <img src="./icons/instagram-favicon.png" alt="Instagram"> ${artista.instagram}
-            </a><br>
-            <a href="${artista.youtube}" target="_blank">
-              <img src="https://www.youtube.com/favicon.ico" alt="YouTube"> ${artista.youtube}
-            </a><br>
-            <a href="${artista.tiktok}" target="_blank">
-              <img src="https://www.tiktok.com/favicon.ico" alt="TikTok"> ${artista.tiktok}
-            </a><br>
-          </div>
+  <a href="${artista.sitio_web}" target="_blank">
+    <img src="./icons/web-favicon.png" alt="Sitio web"> Sitio oficial
+  </a><br>
+  <a href="${artista.instagram}" target="_blank">
+    <img src="./icons/instagram-favicon.png" alt="Instagram"> ${artista.instagram}
+  </a><br>
+  <a href="${artista.youtube}" target="_blank">
+    <img src="https://www.youtube.com/favicon.ico" alt="YouTube"> ${artista.youtube}
+  </a><br>
+  <a href="${artista.tiktok}" target="_blank">
+    <img src="https://www.tiktok.com/favicon.ico" alt="TikTok"> ${artista.tiktok}
+  </a><br>
+</div>
+
           <p><strong>Promotor:</strong> ${artista.promotor}</p>
           <iframe src="${artista.video}"
                   title="${artista.nombre} - Video musical"
