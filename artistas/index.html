@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Artistas PegateYa Medellin</title>
   <style>
-    body {
+    * Fondo oscuro general */
+body {
   font-family: Arial, sans-serif;
-  background: #f0f0f0;
+  background-color: #111;
+  color: #fff;
   margin: 0;
-  padding: 20px;
+  padding: 40px;
+  text-align: center;
 }
 
+/* Contenedor de tarjetas */
 .grid-artistas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -19,10 +23,12 @@
   padding: 20px;
 }
 
+/* Tarjetas blancas */
 .card {
   background: #fff;
+  color: #000;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -30,6 +36,7 @@
   text-align: center;
 }
 
+/* Tipografía dentro de la tarjeta */
 .card h2 {
   margin: 10px 0 5px;
 }
@@ -45,6 +52,7 @@
   color: #555;
 }
 
+/* Imagen de artista */
 .thumbnail {
   width: 100%;
   height: auto;
@@ -52,6 +60,7 @@
   cursor: pointer;
 }
 
+/* Enlaces */
 .links {
   margin-top: 10px;
 }
@@ -72,6 +81,13 @@
   vertical-align: middle;
 }
 
+.links a:hover {
+  color: #005fa3;
+  transform: translateX(2px);
+  transition: all 0.2s ease;
+}
+
+/* YouTube o audio embebido */
 iframe {
   width: 100%;
   height: 180px;
@@ -79,11 +95,37 @@ iframe {
   border: none;
   display: block;
 }
-.links a:hover {
-  color: #005fa3;
-  transform: translateX(2px);
-  transition: all 0.2s ease;
+
+/* Reproductor de audio */
+.player-container {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 20px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
 }
+
+.player-container h2,
+.player-container p {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.player-container .thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 15px;
+}
+
 
 
 
@@ -93,6 +135,16 @@ iframe {
 <center>
   <h1>Artistas PegateYa</h1>
   </center>
+    <div class="player-container">
+      <h2 class="blanco">🔊 PegateYa Radio</h2>
+      <img src="./img/PyaRadio.png" alt="PegateYa Radio" class="thumbnail">
+      <p class="blanco">¡Escucha los mejores éxitos en vivo!</p>
+      <audio controls autoplay>
+        <source src="http://cdn.aka1.usastreams.com:8000/usastreams" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </div>
+
   <div class="container">
 
     <div id="contenedor-artistas" class="grid-artistas"></div>
