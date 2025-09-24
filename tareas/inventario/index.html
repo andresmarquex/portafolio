@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Inventario</title>
+    <link rel="stylesheet" href="inventario.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="inventoryTitle">Inventario Medellín - 17/09/2025</h1>
+        <p>Puedes editar los campos directamente en la tabla.</p>
+        
+        <div class="table-container">
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Cantidad</th>
+                        <th>Serial</th>
+                        <th>Color</th>
+                        <th>Observación</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Las filas del inventario se cargarán aquí -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="actions">
+            <button id="addRowBtn">Agregar Fila</button>
+            <button id="generateBtn">Generar y Enviar por Correo</button>
+        </div>
+
+        <div id="emailSection" class="email-section hidden">
+            <hr>
+            <h3>Enviar Inventario por Correo</h3>
+            <p>El archivo <strong>inventario_actualizado.xlsx</strong> se ha descargado. Ahora, ingresa el correo del destinatario.</p>
+            <input type="email" id="emailInput" placeholder="correo@ejemplo.com">
+            <button id="sendEmailBtn">Abrir Cliente de Correo</button>
+        </div>
+    </div>
+
+    <script src="inventario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx-js-style/dist/xlsx.bundle.js"></script>
+</body>
+</html>
