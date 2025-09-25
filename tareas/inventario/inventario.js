@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tableBody = document.querySelector('#inventoryTable tbody');
     const addRowBtn = document.getElementById('addRowBtn');
+    const saveBtn = document.getElementById('saveBtn');
     const generateBtn = document.getElementById('generateBtn');
     const emailSection = document.getElementById('emailSection');
     const emailInput = document.getElementById('emailInput');
@@ -9,522 +10,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let generatedJsonData = '';
 
-    const inventoryData = {
-  "lastUpdated": "19/9/2025",
-  "data": [
-    {
-      "descripcion": "Bandejas",
-      "cantidad": "5",
-      "serial": "",
-      "color": "Blanco",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Cabezote luz halogena",
-      "cantidad": "1",
-      "serial": "",
-      "color": "Blanco",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Lampara secon one",
-      "cantidad": "2",
-      "serial": "SN12105195i - SNL2105198i",
-      "color": "Morado",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Escupidera",
-      "cantidad": "1",
-      "serial": "",
-      "color": "Blanco opaco",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Tapas principal Gad",
-      "cantidad": "2",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Tapa Espaldar Gad",
-      "cantidad": "2",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Tapa Tetera Gad",
-      "cantidad": "2",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Negatoscopios",
-      "cantidad": "2",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Holder con Valvula Gad",
-      "cantidad": "5",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Juegos de Tarjetas Gad",
-      "cantidad": "2",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Micromotor",
-      "cantidad": "1",
-      "serial": "SN24101853",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Contrangulo",
-      "cantidad": "1",
-      "serial": "SN241018053",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Unidad Gad Dental",
-      "cantidad": "1",
-      "serial": "SN202409342",
-      "color": "Azul",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Scanner",
-      "cantidad": "0",
-      "serial": "SN510703060306",
-      "color": "",
-      "observacion": "Enviado a Barranquilla"
-    },
-    {
-      "descripcion": "Computador",
-      "cantidad": "0",
-      "serial": "SBNRCX06986147B",
-      "color": "",
-      "observacion": "Enviado a Barranquilla"
-    },
-    {
-      "descripcion": "Sticker Modulo",
-      "cantidad": "3",
-      "serial": "",
-      "color": "Blanco",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Sticker Modulo",
-      "cantidad": "2",
-      "serial": "",
-      "color": "Gris",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Canulas para eyector",
-      "cantidad": "2",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Acope Borden",
-      "cantidad": "2",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Tanque transporte",
-      "cantidad": "1",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Boquilla eyector baja",
-      "cantidad": "2",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Boquilla eyector CX",
-      "cantidad": "2",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Baston llena vaso",
-      "cantidad": "1",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Atrapa Sólido",
-      "cantidad": "2",
-      "serial": "",
-      "color": "Gris",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Manija módulo",
-      "cantidad": "1",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Valvula Solenoide",
-      "cantidad": "1",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Automatico Holder",
-      "cantidad": "5",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Manguera 1/4",
-      "cantidad": "6mts",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Mangera 1/8",
-      "cantidad": "6mts",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Manguera de pedal",
-      "cantidad": "3mts",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Manguera jeringa triple",
-      "cantidad": "3mts",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Rejilla para escupidera",
-      "cantidad": "2",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Eyector de alta metpalico",
-      "cantidad": "2",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Eyector plástico",
-      "cantidad": "2",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Compresor de 2 HP",
-      "cantidad": "1",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Cabezote 8 led",
-      "cantidad": "0",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Tapa tanque",
-      "cantidad": "1",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Baston llena tasa",
-      "cantidad": "1",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Tapa de eyector con stiflex",
-      "cantidad": "1",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Butacos",
-      "cantidad": "3",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Butacos recogido Dra. Ruiz",
-      "cantidad": "1",
-      "serial": "",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Electrobisturí",
-      "cantidad": "0",
-      "serial": "",
-      "color": "",
-      "observacion": "Vendido a Aura Maria Lopez OP 0179 del 5 mayo"
-    },
-    {
-      "descripcion": "Unidad A 6800",
-      "cantidad": "1",
-      "serial": "SN2502130363",
-      "color": "Azul",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Sensor",
-      "cantidad": "0",
-      "serial": "2815500812",
-      "color": "",
-      "observacion": "Enviados a Bucaramanga"
-    },
-    {
-      "descripcion": "RX",
-      "cantidad": "0",
-      "serial": "010000167048",
-      "color": "",
-      "observacion": "Enviados a Bucaramanga"
-    },
-    {
-      "descripcion": "Pieza de mano sin luz",
-      "cantidad": "1",
-      "serial": "240712097",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Pieza de mano sin luz",
-      "cantidad": "1",
-      "serial": "240712089",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Pieza de mano sin luz",
-      "cantidad": "1",
-      "serial": "240712002",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Pieza de mano sin luz",
-      "cantidad": "1",
-      "serial": "240712011",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Pieza de mano sin luz",
-      "cantidad": "1",
-      "serial": "240712021",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Cotrangulo",
-      "cantidad": "1",
-      "serial": "240712042",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Lampara 8 Leds",
-      "cantidad": "1",
-      "serial": "-",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "FSA",
-      "cantidad": "0",
-      "serial": "-",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Unidad A600",
-      "cantidad": "1",
-      "serial": "SN2502130347",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Micromotor",
-      "cantidad": "1",
-      "serial": "240712058",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Recta",
-      "cantidad": "1",
-      "serial": "240712053",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Puntas x4",
-      "cantidad": "4",
-      "serial": "-",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Profijet",
-      "cantidad": "1",
-      "serial": "231013335N",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Profijet",
-      "cantidad": "1",
-      "serial": "231010158A",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Profijet",
-      "cantidad": "1",
-      "serial": "240617050N",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Profijet",
-      "cantidad": "1",
-      "serial": "240617033N",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Profijet",
-      "cantidad": "1",
-      "serial": "231010218A",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Profijet",
-      "cantidad": "1",
-      "serial": "240617052N",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Lampara fotocurado",
-      "cantidad": "1",
-      "serial": "I24A2123I",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Lampara fotocurado",
-      "cantidad": "1",
-      "serial": "I24A2200I",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Scaler UDS-J",
-      "cantidad": "1",
-      "serial": "S2520068J",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Scaler UDS-J",
-      "cantidad": "1",
-      "serial": "S2521064J",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Cabezote Led A(1)",
-      "cantidad": "1",
-      "serial": "-",
-      "color": "",
-      "observacion": ""
-    },
-    {
-      "descripcion": "Scanner",
-      "cantidad": "1",
-      "serial": "510703251654",
-      "color": "",
-      "observacion": "Recibidos de Barranquilla"
-    },
-    {
-      "descripcion": "Computador",
-      "cantidad": "1",
-      "serial": "MP2RGDPD",
-      "color": "",
-      "observacion": "Recibidos de Barranquilla"
-    },
-    {
-      "descripcion": "Prueba 5",
-      "cantidad": "5",
-      "serial": "",
-      "color": "",
-      "observacion": "prueba 5"
-    }
-  ]
-};
-
-    // Carga el inventario inicial desde la variable
+    // Carga el inventario inicial desde la base de datos
     const loadInventory = () => {
-        renderTable(inventoryData.data);
-        inventoryTitle.textContent = `Inventario Medellín - ${inventoryData.lastUpdated}`;
+        fetch('get_inventory.php')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.error) {
+                    alert('Error al cargar el inventario: ' + data.error);
+                    return;
+                }
+                renderTable(data);
+                const today = new Date();
+                const formattedDate = today.toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' });
+                inventoryTitle.textContent = `Inventario Medellín - ${formattedDate}`;
+            })
+            .catch(error => {
+                console.error('Error fetching inventory:', error);
+                alert('Hubo un error de red al cargar el inventario. Asegúrate de que los archivos PHP están en el servidor y la configuración de la base de datos es correcta.');
+            });
     };
 
     // Renderiza los datos en la tabla
     const renderTable = (data) => {
         tableBody.innerHTML = '';
-        data.forEach(item => {
-            const row = createRow(item);
-            tableBody.appendChild(row);
-        });
+        if (data.length === 0) {
+            // If no data, add a few empty rows to start
+            for (let i = 0; i < 5; i++) {
+                tableBody.appendChild(createRow());
+            }
+        } else {
+            data.forEach(item => {
+                const row = createRow(item);
+                tableBody.appendChild(row);
+            });
+        }
     };
 
     // Crea una fila de la tabla (<tr>)
@@ -558,84 +82,118 @@ document.addEventListener('DOMContentLoaded', () => {
         tableBody.appendChild(newRow);
     });
 
-    // Genera el Excel, lo descarga y muestra la sección de correo
-    generateBtn.addEventListener('click', () => {
+    // Guarda los cambios en la base de datos
+    saveBtn.addEventListener('click', () => {
         const tableData = [];
         const rows = tableBody.querySelectorAll('tr');
         
         rows.forEach(row => {
             const cells = row.querySelectorAll('td');
-            const rowData = {
-                "Descripción": cells[0].textContent,
-                "Cantidad": cells[1].textContent,
-                "Serial": cells[2].textContent,
-                "Color": cells[3].textContent,
-                "Observación": cells[4].textContent,
-            };
-            tableData.push(rowData);
+            if (cells.length > 0 && cells[0].textContent.trim() !== '') { // Only save rows with a description
+                const rowData = {
+                    "descripcion": cells[0].textContent,
+                    "cantidad": cells[1].textContent,
+                    "serial": cells[2].textContent,
+                    "color": cells[3].textContent,
+                    "observacion": cells[4].textContent,
+                };
+                tableData.push(rowData);
+            }
+        });
+
+        saveBtn.textContent = 'Guardando...';
+        saveBtn.disabled = true;
+
+        fetch('save_inventory.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(tableData),
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Inventario guardado exitosamente.');
+            } else {
+                alert('Error al guardar el inventario: ' + (data.error || 'Error desconocido. Revisa la consola para más detalles.'));
+                console.error('Save error:', data);
+            }
+        })
+        .catch(error => {
+            console.error('Error saving inventory:', error);
+            alert('Hubo un error de red al guardar el inventario.');
+        })
+        .finally(() => {
+            saveBtn.textContent = 'Guardar Cambios';
+            saveBtn.disabled = false;
+        });
+    });
+
+    // Genera el PDF, lo descarga y muestra la sección de correo
+    generateBtn.addEventListener('click', () => {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF({
+            orientation: 'portrait',
+            unit: 'mm',
+            format: 'letter',
+        });
+
+        const table = document.getElementById('inventoryTable');
+        const head = [['Descripción', 'Cantidad', 'Serial', 'Color', 'Observación']];
+        const body = [];
+        const rows = table.querySelectorAll('tbody tr');
+
+        rows.forEach(row => {
+            const cells = row.querySelectorAll('td');
+            if (cells.length > 0) {
+                const rowData = [
+                    cells[0].textContent,
+                    cells[1].textContent,
+                    cells[2].textContent,
+                    cells[3].textContent,
+                    cells[4].textContent,
+                ];
+                body.push(rowData);
+            }
         });
 
         const currentDate = new Date().toLocaleDateString('es-ES');
-        
-        const ws = XLSX.utils.json_to_sheet(tableData);
+        const title = `Inventario Medellín - ${currentDate}`;
 
-        const headerStyle = {
-            font: { bold: true },
-            border: {
-                bottom: { style: "thin", color: { rgb: "000000" } }
-            }
-        };
+        doc.text(title, 14, 15);
 
-        const cellStyle = {
-            border: {
-                top: { style: "thin", color: { rgb: "000000" } },
-                bottom: { style: "thin", color: { rgb: "000000" } },
-                left: { style: "thin", color: { rgb: "000000" } },
-                right: { style: "thin", color: { rgb: "000000" } }
-            }
-        };
+        doc.autoTable({
+            head: head,
+            body: body,
+            startY: 20,
+            theme: 'grid',
+            margin: { left: 10, right: 10 },
+            styles: { fontSize: 8 },
+            headStyles: { fillColor: [22, 160, 133] },
+            didDrawPage: function (data) {
+                // Header
+                doc.setFontSize(12);
+                doc.text(title, data.settings.margin.left, 15);
+            },
+        });
 
-        // Apply styles
-        const range = XLSX.utils.decode_range(ws['!ref']);
-        for (let R = range.s.r; R <= range.e.r; ++R) {
-            for (let C = range.s.c; C <= range.e.c; ++C) {
-                const cell_address = {c:C, r:R};
-                const cell_ref = XLSX.utils.encode_cell(cell_address);
-                if(!ws[cell_ref]) continue;
-                if(R === 0){
-                    ws[cell_ref].s = headerStyle;
-                } else {
-                    ws[cell_ref].s = cellStyle;
-                }
-            }
-        }
-        
-        ws['!cols'] = [
-            { wch: 30 },
-            { wch: 10 },
-            { wch: 25 },
-            { wch: 15 },
-            { wch: 40 }
-        ];
+        const pdfFileName = `inventario_actualizado_${currentDate}.pdf`;
+        doc.save(pdfFileName);
 
-        const wb = XLSX.utils.book_new();
-        XLSX.utils.book_append_sheet(wb, ws, 'Inventario');
-        XLSX.writeFile(wb, `inventario_actualizado_${currentDate}.xlsx`);
-
-        const newInventoryData = { lastUpdated: currentDate, data: tableData.map(row => ({
-            descripcion: row.Descripción,
-            cantidad: row.Cantidad,
-            serial: row.Serial,
-            color: row.Color,
-            observacion: row.Observación
-        })) };
-        generatedJsonData = JSON.stringify(newInventoryData, null, 2);
+        // Prepare data for email body
+        const tableDataForEmail = body.map(row => ({
+            descripcion: row[0],
+            cantidad: row[1],
+            serial: row[2],
+            color: row[3],
+            observacion: row[4]
+        }));
+        generatedJsonData = JSON.stringify({ lastUpdated: currentDate, data: tableDataForEmail }, null, 2);
 
         emailSection.classList.remove('hidden');
-        alert(`Archivo "inventario_actualizado_${currentDate}.xlsx" generado y descargado.`);
-        
-        console.log("Para guardar los cambios, copia el siguiente texto y pídemelo para actualizar el archivo inventario.js:");
-        console.log(`const inventoryData = ${generatedJsonData};`);
+        document.querySelector('#emailSection p').textContent = `El archivo ${pdfFileName} se ha descargado. Ahora, ingresa el correo del destinatario.`;
+        alert(`Archivo "${pdfFileName}" generado y descargado.`);
     });
 
     // Abre el cliente de correo del usuario
@@ -652,7 +210,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         
-        alert(`Se abrirá tu cliente de correo. Por favor, adjunta manualmente el archivo "inventario_actualizado_${currentDate}.xlsx" que acabas de descargar.`);
+        const pdfFileName = `inventario_actualizado_${currentDate}.pdf`;
+        alert(`Se abrirá tu cliente de correo. Por favor, adjunta manualmente el archivo "${pdfFileName}" que acabas de descargar.`);
         window.location.href = mailtoLink;
     });
 
