@@ -16,6 +16,12 @@ if ($conn->connect_error) {
 $sql = "SELECT id, descripcion, cantidad, serial, color, observacion FROM inventory ORDER BY id";
 $result = $conn->query($sql);
 
+// Add error handling for the query
+if ($result === false) {
+    http_response_code(500);
+    die(json_encode(['error' => 'Query failed: ' . $conn->error]));
+}
+
 $inventory = [];
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {

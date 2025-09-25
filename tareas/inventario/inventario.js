@@ -161,8 +161,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentDate = new Date().toLocaleDateString('es-ES');
         const title = `Inventario Medellín - ${currentDate}`;
 
-        doc.text(title, 14, 15);
-
         doc.autoTable({
             head: head,
             body: body,
